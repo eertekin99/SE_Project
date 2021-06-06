@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="cargo_databaseDataSet4" targetNamespace="http://tempuri.org/cargo_databaseDataSet4.xsd" xmlns:mstns="http://tempuri.org/cargo_databaseDataSet4.xsd" xmlns="http://tempuri.org/cargo_databaseDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="cargo_databaseConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="cargo_databaseConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.cargo_databaseConnectionString1" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="atTableAdapter" GeneratorDataComponentClassName="atTableAdapter" Name="at" UserDataComponentName="atTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cargo_databaseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Branch_ID`, `Branch_Location`, `Cargo_ID`, `Received` FROM `at`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Branch_ID" DataSetColumn="Branch_ID" />
+              <Mapping SourceColumn="Branch_Location" DataSetColumn="Branch_Location" />
+              <Mapping SourceColumn="Cargo_ID" DataSetColumn="Cargo_ID" />
+              <Mapping SourceColumn="Received" DataSetColumn="Received" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="billTableAdapter" GeneratorDataComponentClassName="billTableAdapter" Name="bill" UserDataComponentName="billTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cargo_databaseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID`, `Sender_ID`, `Payment_Type`, `Cost` FROM `bill`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Sender_ID" DataSetColumn="Sender_ID" />
+              <Mapping SourceColumn="Payment_Type" DataSetColumn="Payment_Type" />
+              <Mapping SourceColumn="Cost" DataSetColumn="Cost" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="branchTableAdapter" GeneratorDataComponentClassName="branchTableAdapter" Name="branch" UserDataComponentName="branchTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cargo_databaseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID`, `Location`, `Name`, `Mobile` FROM `branch`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Location" DataSetColumn="Location" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Mobile" DataSetColumn="Mobile" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="branchemployeeTableAdapter" GeneratorDataComponentClassName="branchemployeeTableAdapter" Name="branchemployee" UserDataComponentName="branchemployeeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cargo_databaseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID` FROM `branchemployee`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="cargoTableAdapter" GeneratorDataComponentClassName="cargoTableAdapter" Name="cargo" UserDataComponentName="cargoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cargo_databaseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID`, `Sender_ID`, `Receiver_ID`, `Deliverer_ID`, `Br_Employee_ID`, `Status`, `Type`, `Description`, `Senders_Delivery_Date`, `Delivery_Date`, `Bill_ID`, `Receiver_Adress` FROM `cargo`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Sender_ID" DataSetColumn="Sender_ID" />
+              <Mapping SourceColumn="Receiver_ID" DataSetColumn="Receiver_ID" />
+              <Mapping SourceColumn="Deliverer_ID" DataSetColumn="Deliverer_ID" />
+              <Mapping SourceColumn="Br_Employee_ID" DataSetColumn="Br_Employee_ID" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Senders_Delivery_Date" DataSetColumn="Senders_Delivery_Date" />
+              <Mapping SourceColumn="Delivery_Date" DataSetColumn="Delivery_Date" />
+              <Mapping SourceColumn="Bill_ID" DataSetColumn="Bill_ID" />
+              <Mapping SourceColumn="Receiver_Adress" DataSetColumn="Receiver_Adress" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="customerTableAdapter" GeneratorDataComponentClassName="customerTableAdapter" Name="customer" UserDataComponentName="customerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cargo_databaseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID`, `Name`, `Mobile_Phone`, `Address`, `Email`, `Type` FROM `customer`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Mobile_Phone" DataSetColumn="Mobile_Phone" />
+              <Mapping SourceColumn="Address" DataSetColumn="Address" />
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="delivererTableAdapter" GeneratorDataComponentClassName="delivererTableAdapter" Name="deliverer" UserDataComponentName="delivererTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cargo_databaseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID`, `Vehicle_Type` FROM `deliverer`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Vehicle_Type" DataSetColumn="Vehicle_Type" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="employeeTableAdapter" GeneratorDataComponentClassName="employeeTableAdapter" Name="employee" UserDataComponentName="employeeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cargo_databaseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID`, `Name`, `Branch_ID`, `Branch_Location`, `Mobile_Phone`, `Role` FROM `employee`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Branch_ID" DataSetColumn="Branch_ID" />
+              <Mapping SourceColumn="Branch_Location" DataSetColumn="Branch_Location" />
+              <Mapping SourceColumn="Mobile_Phone" DataSetColumn="Mobile_Phone" />
+              <Mapping SourceColumn="Role" DataSetColumn="Role" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="receiverTableAdapter" GeneratorDataComponentClassName="receiverTableAdapter" Name="receiver" UserDataComponentName="receiverTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cargo_databaseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID` FROM `receiver`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="senderTableAdapter" GeneratorDataComponentClassName="senderTableAdapter" Name="sender" UserDataComponentName="senderTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cargo_databaseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID` FROM `sender`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="cargo_databaseDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="cargo_databaseDataSet4" msprop:Generator_UserDSName="cargo_databaseDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="at" msprop:Generator_TableClassName="atDataTable" msprop:Generator_TableVarName="tableat" msprop:Generator_TablePropName="at" msprop:Generator_RowDeletingName="atRowDeleting" msprop:Generator_RowChangingName="atRowChanging" msprop:Generator_RowEvHandlerName="atRowChangeEventHandler" msprop:Generator_RowDeletedName="atRowDeleted" msprop:Generator_UserTableName="at" msprop:Generator_RowChangedName="atRowChanged" msprop:Generator_RowEvArgName="atRowChangeEvent" msprop:Generator_RowClassName="atRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Branch_ID" msprop:Generator_ColumnVarNameInTable="columnBranch_ID" msprop:Generator_ColumnPropNameInRow="Branch_ID" msprop:Generator_ColumnPropNameInTable="Branch_IDColumn" msprop:Generator_UserColumnName="Branch_ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Branch_Location" msprop:Generator_ColumnVarNameInTable="columnBranch_Location" msprop:Generator_ColumnPropNameInRow="Branch_Location" msprop:Generator_ColumnPropNameInTable="Branch_LocationColumn" msprop:Generator_UserColumnName="Branch_Location">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cargo_ID" msprop:Generator_ColumnVarNameInTable="columnCargo_ID" msprop:Generator_ColumnPropNameInRow="Cargo_ID" msprop:Generator_ColumnPropNameInTable="Cargo_IDColumn" msprop:Generator_UserColumnName="Cargo_ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Received" msprop:Generator_ColumnVarNameInTable="columnReceived" msprop:Generator_ColumnPropNameInRow="Received" msprop:Generator_ColumnPropNameInTable="ReceivedColumn" msprop:Generator_UserColumnName="Received" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="bill" msprop:Generator_TableClassName="billDataTable" msprop:Generator_TableVarName="tablebill" msprop:Generator_TablePropName="bill" msprop:Generator_RowDeletingName="billRowDeleting" msprop:Generator_RowChangingName="billRowChanging" msprop:Generator_RowEvHandlerName="billRowChangeEventHandler" msprop:Generator_RowDeletedName="billRowDeleted" msprop:Generator_UserTableName="bill" msprop:Generator_RowChangedName="billRowChanged" msprop:Generator_RowEvArgName="billRowChangeEvent" msprop:Generator_RowClassName="billRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Sender_ID" msprop:Generator_ColumnVarNameInTable="columnSender_ID" msprop:Generator_ColumnPropNameInRow="Sender_ID" msprop:Generator_ColumnPropNameInTable="Sender_IDColumn" msprop:Generator_UserColumnName="Sender_ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Payment_Type" msprop:Generator_ColumnVarNameInTable="columnPayment_Type" msprop:Generator_ColumnPropNameInRow="Payment_Type" msprop:Generator_ColumnPropNameInTable="Payment_TypeColumn" msprop:Generator_UserColumnName="Payment_Type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cost" msprop:Generator_ColumnVarNameInTable="columnCost" msprop:Generator_ColumnPropNameInRow="Cost" msprop:Generator_ColumnPropNameInTable="CostColumn" msprop:Generator_UserColumnName="Cost" type="xs:float" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="branch" msprop:Generator_TableClassName="branchDataTable" msprop:Generator_TableVarName="tablebranch" msprop:Generator_TablePropName="branch" msprop:Generator_RowDeletingName="branchRowDeleting" msprop:Generator_RowChangingName="branchRowChanging" msprop:Generator_RowEvHandlerName="branchRowChangeEventHandler" msprop:Generator_RowDeletedName="branchRowDeleted" msprop:Generator_UserTableName="branch" msprop:Generator_RowChangedName="branchRowChanged" msprop:Generator_RowEvArgName="branchRowChangeEvent" msprop:Generator_RowClassName="branchRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mobile" msprop:Generator_ColumnVarNameInTable="columnMobile" msprop:Generator_ColumnPropNameInRow="Mobile" msprop:Generator_ColumnPropNameInTable="MobileColumn" msprop:Generator_UserColumnName="Mobile">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16777215" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="branchemployee" msprop:Generator_TableClassName="branchemployeeDataTable" msprop:Generator_TableVarName="tablebranchemployee" msprop:Generator_TablePropName="branchemployee" msprop:Generator_RowDeletingName="branchemployeeRowDeleting" msprop:Generator_RowChangingName="branchemployeeRowChanging" msprop:Generator_RowEvHandlerName="branchemployeeRowChangeEventHandler" msprop:Generator_RowDeletedName="branchemployeeRowDeleted" msprop:Generator_UserTableName="branchemployee" msprop:Generator_RowChangedName="branchemployeeRowChanged" msprop:Generator_RowEvArgName="branchemployeeRowChangeEvent" msprop:Generator_RowClassName="branchemployeeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:unsignedLong" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cargo" msprop:Generator_TableClassName="cargoDataTable" msprop:Generator_TableVarName="tablecargo" msprop:Generator_TablePropName="cargo" msprop:Generator_RowDeletingName="cargoRowDeleting" msprop:Generator_RowChangingName="cargoRowChanging" msprop:Generator_RowEvHandlerName="cargoRowChangeEventHandler" msprop:Generator_RowDeletedName="cargoRowDeleted" msprop:Generator_UserTableName="cargo" msprop:Generator_RowChangedName="cargoRowChanged" msprop:Generator_RowEvArgName="cargoRowChangeEvent" msprop:Generator_RowClassName="cargoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Sender_ID" msprop:Generator_ColumnVarNameInTable="columnSender_ID" msprop:Generator_ColumnPropNameInRow="Sender_ID" msprop:Generator_ColumnPropNameInTable="Sender_IDColumn" msprop:Generator_UserColumnName="Sender_ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Receiver_ID" msprop:Generator_ColumnVarNameInTable="columnReceiver_ID" msprop:Generator_ColumnPropNameInRow="Receiver_ID" msprop:Generator_ColumnPropNameInTable="Receiver_IDColumn" msprop:Generator_UserColumnName="Receiver_ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Deliverer_ID" msprop:Generator_ColumnVarNameInTable="columnDeliverer_ID" msprop:Generator_ColumnPropNameInRow="Deliverer_ID" msprop:Generator_ColumnPropNameInTable="Deliverer_IDColumn" msprop:Generator_UserColumnName="Deliverer_ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Br_Employee_ID" msprop:Generator_ColumnVarNameInTable="columnBr_Employee_ID" msprop:Generator_ColumnPropNameInRow="Br_Employee_ID" msprop:Generator_ColumnPropNameInTable="Br_Employee_IDColumn" msprop:Generator_UserColumnName="Br_Employee_ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Senders_Delivery_Date" msprop:Generator_ColumnVarNameInTable="columnSenders_Delivery_Date" msprop:Generator_ColumnPropNameInRow="Senders_Delivery_Date" msprop:Generator_ColumnPropNameInTable="Senders_Delivery_DateColumn" msprop:Generator_UserColumnName="Senders_Delivery_Date" type="xs:dateTime" />
+              <xs:element name="Delivery_Date" msprop:Generator_ColumnVarNameInTable="columnDelivery_Date" msprop:Generator_ColumnPropNameInRow="Delivery_Date" msprop:Generator_ColumnPropNameInTable="Delivery_DateColumn" msprop:Generator_UserColumnName="Delivery_Date" type="xs:dateTime" />
+              <xs:element name="Bill_ID" msprop:Generator_ColumnVarNameInTable="columnBill_ID" msprop:Generator_ColumnPropNameInRow="Bill_ID" msprop:Generator_ColumnPropNameInTable="Bill_IDColumn" msprop:Generator_UserColumnName="Bill_ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Receiver_Adress" msprop:Generator_ColumnVarNameInTable="columnReceiver_Adress" msprop:Generator_ColumnPropNameInRow="Receiver_Adress" msprop:Generator_ColumnPropNameInTable="Receiver_AdressColumn" msprop:Generator_UserColumnName="Receiver_Adress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="customer" msprop:Generator_TableClassName="customerDataTable" msprop:Generator_TableVarName="tablecustomer" msprop:Generator_TablePropName="customer" msprop:Generator_RowDeletingName="customerRowDeleting" msprop:Generator_RowChangingName="customerRowChanging" msprop:Generator_RowEvHandlerName="customerRowChangeEventHandler" msprop:Generator_RowDeletedName="customerRowDeleted" msprop:Generator_UserTableName="customer" msprop:Generator_RowChangedName="customerRowChanged" msprop:Generator_RowEvArgName="customerRowChangeEvent" msprop:Generator_RowClassName="customerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mobile_Phone" msprop:Generator_ColumnVarNameInTable="columnMobile_Phone" msprop:Generator_ColumnPropNameInRow="Mobile_Phone" msprop:Generator_ColumnPropNameInTable="Mobile_PhoneColumn" msprop:Generator_UserColumnName="Mobile_Phone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16777215" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="deliverer" msprop:Generator_TableClassName="delivererDataTable" msprop:Generator_TableVarName="tabledeliverer" msprop:Generator_TablePropName="deliverer" msprop:Generator_RowDeletingName="delivererRowDeleting" msprop:Generator_RowChangingName="delivererRowChanging" msprop:Generator_RowEvHandlerName="delivererRowChangeEventHandler" msprop:Generator_RowDeletedName="delivererRowDeleted" msprop:Generator_UserTableName="deliverer" msprop:Generator_RowChangedName="delivererRowChanged" msprop:Generator_RowEvArgName="delivererRowChangeEvent" msprop:Generator_RowClassName="delivererRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Vehicle_Type" msprop:Generator_ColumnVarNameInTable="columnVehicle_Type" msprop:Generator_ColumnPropNameInRow="Vehicle_Type" msprop:Generator_ColumnPropNameInTable="Vehicle_TypeColumn" msprop:Generator_UserColumnName="Vehicle_Type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="employee" msprop:Generator_TableClassName="employeeDataTable" msprop:Generator_TableVarName="tableemployee" msprop:Generator_TablePropName="employee" msprop:Generator_RowDeletingName="employeeRowDeleting" msprop:Generator_RowChangingName="employeeRowChanging" msprop:Generator_RowEvHandlerName="employeeRowChangeEventHandler" msprop:Generator_RowDeletedName="employeeRowDeleted" msprop:Generator_UserTableName="employee" msprop:Generator_RowChangedName="employeeRowChanged" msprop:Generator_RowEvArgName="employeeRowChangeEvent" msprop:Generator_RowClassName="employeeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Branch_ID" msprop:Generator_ColumnVarNameInTable="columnBranch_ID" msprop:Generator_ColumnPropNameInRow="Branch_ID" msprop:Generator_ColumnPropNameInTable="Branch_IDColumn" msprop:Generator_UserColumnName="Branch_ID" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Branch_Location" msprop:Generator_ColumnVarNameInTable="columnBranch_Location" msprop:Generator_ColumnPropNameInRow="Branch_Location" msprop:Generator_ColumnPropNameInTable="Branch_LocationColumn" msprop:Generator_UserColumnName="Branch_Location">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mobile_Phone" msprop:Generator_ColumnVarNameInTable="columnMobile_Phone" msprop:Generator_ColumnPropNameInRow="Mobile_Phone" msprop:Generator_ColumnPropNameInTable="Mobile_PhoneColumn" msprop:Generator_UserColumnName="Mobile_Phone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16777215" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Role" msprop:Generator_ColumnVarNameInTable="columnRole" msprop:Generator_ColumnPropNameInRow="Role" msprop:Generator_ColumnPropNameInTable="RoleColumn" msprop:Generator_UserColumnName="Role">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="receiver" msprop:Generator_TableClassName="receiverDataTable" msprop:Generator_TableVarName="tablereceiver" msprop:Generator_TablePropName="receiver" msprop:Generator_RowDeletingName="receiverRowDeleting" msprop:Generator_RowChangingName="receiverRowChanging" msprop:Generator_RowEvHandlerName="receiverRowChangeEventHandler" msprop:Generator_RowDeletedName="receiverRowDeleted" msprop:Generator_UserTableName="receiver" msprop:Generator_RowChangedName="receiverRowChanged" msprop:Generator_RowEvArgName="receiverRowChangeEvent" msprop:Generator_RowClassName="receiverRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:unsignedLong" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sender" msprop:Generator_TableClassName="senderDataTable" msprop:Generator_TableVarName="tablesender" msprop:Generator_TablePropName="sender" msprop:Generator_RowDeletingName="senderRowDeleting" msprop:Generator_RowChangingName="senderRowChanging" msprop:Generator_RowEvHandlerName="senderRowChangeEventHandler" msprop:Generator_RowDeletedName="senderRowDeleted" msprop:Generator_UserTableName="sender" msprop:Generator_RowChangedName="senderRowChanged" msprop:Generator_RowEvArgName="senderRowChangeEvent" msprop:Generator_RowClassName="senderRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:unsignedLong" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:branch" />
+      <xs:field xpath="mstns:Location" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
