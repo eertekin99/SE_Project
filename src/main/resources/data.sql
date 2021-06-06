@@ -1,0 +1,56 @@
+-- insert into bill(Sender_ID,Payment_Type, Cost)
+-- VALUES
+--     (7,'Credit Card', 25.08),
+--     (8,'Cash', 32.29),
+--     (9,'Cash', 76.36),
+--     (10,'Credit Card', 54.42)
+-- ;
+--
+-- #SELECT count(ID), avg(Cost)
+-- #FROM bill;
+--
+--
+-- INSERT INTO Branch(location, name, mobile)
+-- VALUES
+--         ('ak sokak no 32', 'Beykoz', 35126845623),
+--         ('Kara sokak no 37', 'Beyoğlu', 36126455613),
+--         ('Lale sokak no 12', 'Bayrampaşa', 85936845463),
+--         ('Köşegen sokak no 6', 'Beykoz', 35626386623);
+--
+-- INSERT INTO Employee(name, branch_id, branch_location, mobile_phone, role)
+-- VALUES
+--         ('Ali Atik', 1, 'ak sokak no 32', 356423, 'Deliverer'),
+--         ('Ahmet Kazakçı', 1,'ak sokak no 32', 356423, 'Deliverer'),
+--         ('Barış Ters', 2,'Kara sokak no 37', 356423, 'Deliverer'),
+--         ('Burak Yıldırım', 3, 'Lale sokak no 12', 125362, 'Deliverer'),
+--         ('Arif Gültekin', 3, 'Lale sokak no 12', 135264, 'Branch Employee'),
+--         ('Osman Gül', 4, 'Köşegen sokak no 6', 35468613, 'Branch Employee');
+--
+--
+-- INSERT INTO Deliverer
+-- VALUES
+--     (1, 'Motor'),
+--     (2, 'Car'),
+--     (3, 'Motor'),
+--     (4, 'Car');
+--
+--
+-- INSERT INTO BranchEmployee
+-- VALUES
+--         (5),
+--         (6);
+--
+-- INSERT INTO Cargo(Sender_ID,Receiver_ID,Deliverer_ID, Br_Employee_ID, Status, Type, Description, Senders_Delivery_Date, Delivery_Date, Bill_ID, Receiver_Address, Weight)
+-- VALUES
+--     (7,1,1,5,'Delivered','Not Fragile','Dgko','2021-01-5','2021-01-11',1,'Suadiye Numara:4', 23),
+--     (8,2,2,5,'Not Delivered','Fragile','Apple','2021-01-9','2021-01-20',2,'Başakşehir Numara:54', 54),
+--     (9,3,3,6,'Delivered','Fragile','Samsung SSD','2021-01-3','2021-01-10',3,'Taksim Numara:23', 27),
+--     (10,4,4,6,'Not delivered','Not Fragile','Güle Güle kullan','2021-01-8','2021-01-19',4,'Kirazlı Numara:94', 2);
+--
+--
+-- INSERT INTO at
+-- VALUES
+--        (1,'Ak sokak no 32',1,'2021-01-8'),
+--        (2,'Kara sokak no 37',2,'2021-01-10'),
+--        (3,'Lale sokak no 12',3,'2021-01-7'),
+--        (4,'Köşegen sokak no 6',4,'2021-01-11');
